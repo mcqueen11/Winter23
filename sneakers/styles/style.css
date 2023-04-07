@@ -214,6 +214,34 @@ footer p {
     width: 700%
 }
 
+/* Profile CSS */
+.card {
+  box-shadow: 0 4px 8px 0 #08080C(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Gloock";
+}
+
+.title {
+  color: #08080C;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Roboto slab";
+}
+
+.title2 {
+  color: #08080C;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Roboto Slab";
+}
+
+
+h4 {
+  font-size:35px;
+}
+
 @media screen and (max-width: 920px) {
     .nav-main a {
         font-size: 1.1em;
