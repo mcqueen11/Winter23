@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Slab:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dbdfe6;
+}
+
+
+h1, h2, p {
+    color: #08080C;
+}
+
+h1, h2, h3 {
+    font-family: "Gloock";
+    letter-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-family: Roboto Slab;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#content, footer, img, nav, p {
+    border: 3px solid #D90429;
+}
+
+#content, nav, nav a, footer, p, img {
+    border-radius: 3mm;
+}
+
+#content {
+    max-width:  1000px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 3px solid #D90429;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #08080C;
+}
+
+.logo-box {
+    margin-left: 5px;
+}
+
+.logo-box img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.nav-main {
+    background-color: #D90429;
+    margin-left: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 2fr));
+    padding: 20px 0 20px 0;
+    justify-items: center;
+    margin-right: 10px;
+}
+
+.nav-main a {
+    text-decoration: none;
+    font-family: 'Glook';
+    color: #E5E4E2;
+    font-weight: 600;
+    font-size: 1.6em;
+    padding: 5px;
+    text-align: center;
+}
+
+.nav-main {
+    background-color: #08080C;
+    color: #D90429;
+    font-family: 'Bonheur Royale', cursive;
+}
+
+.nav-main a:hover, .nav-main a:focus {
+    background-color: #EDF2F4;
+    color: #D90429;
+    border: 3px solid #D90429;
+}
+
+main {
+    text-align: center;
+}
+h1{
+    text-decoration: underline;
+}
+main div {
+    margin: 20px auto;
+}
+
+main img {
+    width: 70%;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+}
+
+section {
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #D90429;
+    margin-top: 20px;
+    
+}
+
+section p, main p {
+    width: 70%;
+    margin: 15px auto;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.grid-one, .grid-two {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.par-1, .par-2, .par-3, .img-center {
+    justify-self: center;
+}
+
+.par-1 {
+    grid-column: 1/5;
+    width: 100%;
+}
+
+.img-center{
+    grid-column: 5/9;
+    width: 100%;
+}
+
+.par-2 {
+    grid-column: 9/13;
+    width: 100%;
+}
+
+.par-3 {
+    grid-column: 5/9;
+}
+
+footer, .form-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #08080C;
+}
+
+footer p {
+    color: #EDF2F4;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.site-plan-link {
+    color: #EDF2F4;
+    text-decoration: 0;
+}
+
+.site-plan-link:hover {
+    color: #D90429;
+}
+
+.social, .form-social {
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.social img, .form-social img {
+    width: 30px;
+    padding: 1px;
+    border: none;
+}
+
+.social img:hover, .social img:focus {
+    border: 4px solid #D90429;
+}
+
+.img-right {
+    grid-column: 5/17;
+    width: 100%;
+}
+
+.img-left {
+    float: left;
+    width: 700%
+}
+
+@media screen and (max-width: 920px) {
+    .nav-main a {
+        font-size: 1.1em;
+    }
+  
+    header {
+        position: unset;
+    }
+  
+    .grid-one, .grid-two, .grid-five {
+        display: block;
+    }
+
+    fieldset {
+        width: 60%;
+    }
+
+    label, input, option {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-main a {
+        font-size: 0.9em;
+    }
+
+    fieldset {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav-main, .grid-one, .grid-two, .grid-three, .grid-four, .grid-five{
+        display: block;
+    }
+
+    .nav-main div {
+        font-size: 1em;
+        margin: 3px 0 3px 0;
+        padding: 5px;
+    }
+
+    .nav-main {
+        padding: 0;
+        margin: 5px;
+    }
+
+    .nav-main a {
+        padding: 2px;
+        font-size: 1.6em;
+    }
+
+    header {
+        display: block;
+        position: unset;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    section p, main p, footer p, .form-footer p, label {
+        font-size: 17px;
+    }
+
+    input, option {
+        font-size: 14px;
+    }
+
+    #full-names, #birth, #email, select {
+        width: 150px;
+    }
+    
+    fieldset {
+        width: 65%;
+    }
+
+    button {
+        margin-right: 35%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .nav-main div {
+        font-size: 1em;
+        margin: 10px 0 10px 0;
+        padding: 10px;
+    }
+
+    .nav-main {
+        padding: 0
+    }
+
+    .nav-main a {
+        padding: 2px;
+      line-height: 20px;
+    }
+
+    section p, main p, footer p, .form-footer p, label {
+        font-size: 15px;
+    }
+
+    fieldset {
+        width: unset;
+        text-align: end;
+    }
+
+    footer {
+        display: block;
+    }
+
+    button {
+        padding: 4px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2, legend {
+        font-size: 2em;
+    }
+  
+    label, input, option {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .nav-main div {
+        font-size: 0.7em;
+        padding: 3px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section p, main p, footer p, .form-footer p, label {
+        font-size: 12px;
+    }
+
+    .social {
+        justify-items: center;
+    }
+
+    .logo-box img {
+         width: 120px;
+    }
+
+    button {
+        margin-right: 30%;
+    }
+
+}
